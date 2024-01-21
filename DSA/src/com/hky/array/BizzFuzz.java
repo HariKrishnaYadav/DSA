@@ -10,6 +10,7 @@ public class BizzFuzz {
 		for (int i = 1; i <= num; i++) {
 			if (i % 3 == 0 && i % 5 == 0) {
 
+
 				System.out.println("BizzFuzz");
 
 			} else if (i % 3 == 0) {
