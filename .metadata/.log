@@ -3178,3 +3178,91 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Not authenticated: 
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+!SESSION 2024-01-21 11:26:55.493 -----------------------------------------------
+eclipse.buildId=4.20.1.202310260003
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -keyring /Users/hare/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/hare/.eclipse_keyring
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-01-21 11:26:58.180
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-01-21 15:12:07.005
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-01-21 15:12:07.006
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-21 15:12:13.259
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.7.v20230425-1502/jre/bin/java
+-cp
+/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.springframework.tooling.boot.ls_1.50.0.202310252332/servers/spring-boot-language-server/BOOT-INF/classes:/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.springframework.tooling.boot.ls_1.50.0.202310252332/servers/spring-boot-language-server/BOOT-INF/lib/*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.springframework.tooling.boot.ls_1.50.0.202310252332/servers/spring-boot-language-server/BOOT-INF/classes/application.properties
+-XX:ErrorFile=/Users/hare/dsa/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1705830133251
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-21 15:12:13.262
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-21 15:12:13.674
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 4881
+
+!ENTRY org.vgcpge.eclipse.copilot.ui 2 0 2024-01-21 15:12:13.906
+!MESSAGE Node.js location: /Applications/SpringToolSuite4.app/Contents/Eclipse/.node/node-v18.17.1-darwin-x64/bin/node. Version: v18.17.1
+
+!ENTRY org.vgcpge.eclipse.copilot.ui 1 0 2024-01-21 15:12:14.131
+!MESSAGE Node.js location: /Applications/SpringToolSuite4.app/Contents/Eclipse/.node/node-v18.17.1-darwin-x64/bin/node. Version: v18.17.1
+
+!ENTRY org.vgcpge.eclipse.copilot.ui 1 0 2024-01-21 15:12:14.141
+!MESSAGE Starting: /Applications/SpringToolSuite4.app/Contents/Eclipse/.node/node-v18.17.1-darwin-x64/bin/node /Applications/SpringToolSuite4.app/Contents/Eclipse/configuration/org.vgcpge.eclipse.copilot.ui/downloaded-agent/copilot.vim-release/dist/agent.js
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-01-21 15:12:15.751
+!MESSAGE [Log]	[DEBUG] [agent] [2024-01-21T09:42:15.641Z] Agent service starting
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-01-21 15:12:15.850
+!MESSAGE [Log]	[DEBUG] [agent] [2024-01-21T09:42:15.837Z] Telemetry initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-01-21 15:12:17.944
+!MESSAGE [Info]	[INFO] [auth] [2024-01-21T09:42:17.909Z] Invalid copilot token: missing token: 403 
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-01-21 15:12:17.991
+!MESSAGE [Error]	java.lang.NullPointerException: Cannot invoke "org.vgcpge.copilot.ls.rpc.Status.ordinal()" because "status" is null
+	at org.vgcpge.copilot.ls.Authentication.ensureAuthenticated(Authentication.java:37)
+	at org.vgcpge.copilot.ls.Authentication.<init>(Authentication.java:29)
+	at org.vgcpge.copilot.ls.LanguageServer.lambda$1(LanguageServer.java:70)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-01-21 15:12:28.523
+!MESSAGE [Error]	[ERROR] [auth] [2024-01-21T09:42:28.484Z] Failed to send notification result to GitHub: 403 

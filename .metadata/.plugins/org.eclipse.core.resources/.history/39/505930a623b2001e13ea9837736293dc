@@ -1,8 +1,0 @@
-package com.hky.array;
-
-public class BizzFuzz {
-    public static void main(String[] args) {
-       
-    }
-
-}
