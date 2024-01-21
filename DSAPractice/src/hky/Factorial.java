@@ -1,4 +1,4 @@
-package hky.practice;
+package hky;
 
 import java.util.Scanner;
 

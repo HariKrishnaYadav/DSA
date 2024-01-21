@@ -27,6 +27,7 @@ public class FirstAnd2ndSmallestNumber {
 				secondSmallest = arr[i];
 
 			}
+			String fsecondSmallest = null;
 			System.out.println("secondSmallest::" + fsecondSmallest);
 	}
 }
